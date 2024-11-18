@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Wyślij" />
+        android:text="ZATWIERDŹ" />
     <TextView
         android:text="Autor: Michał Lolo"
         android:layout_width="match_parent"

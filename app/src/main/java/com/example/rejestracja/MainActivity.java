@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (!pass.equals(passConf)) {
                     text_2.setText("Hasła się różnią");
                 } else {
-                    text_2.setText("");
+                    text_2.setText("Witaj "+ email);
 
                 }
             }
