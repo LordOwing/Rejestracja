@@ -34,15 +34,9 @@ public class MainActivity extends AppCompatActivity {
                 String passConf = ((EditText) findViewById(R.id.form3)).getText().toString().trim();
                 TextView text_2 = findViewById(R.id.text_2);
 
-                if (email.isEmpty()) {
-                     text_2.setText("Podaj e-mail");
-                } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                if (!email.contains("@")) {
                     text_2.setText("Nieprawidłowy adres e-mail");
-                } else if (pass.isEmpty()) {
-                    text_2.setText("Podaj hasło");
 
-                } else if (passConf.isEmpty()) {
-                    text_2.setText("Powtórz hasło");
                 } else if (!pass.equals(passConf)) {
                     text_2.setText("Hasła się różnią");
                 } else {
